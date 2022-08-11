@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Profile</title>
+</head>
+<body>
+    <p>User {{ profile.name }}</p> 
+    <img src="{{ profile.image.url }}" alt="">
+    <p>Start <a href="{% url 'chat:private_room'  profile.name %}">Private chat</a> with {{ profile.name }}</p>
+</body>
+</html>
